@@ -9,6 +9,7 @@ import { withDeliveryLogo } from "./RestarauntCard";
 import UserContext from "../utils/UserContext";
 import { useContext } from "react";
 import search_bg from "../images/search_bg.png"
+import HomeShimmer from "../shimmer-components/HomeShimmer";
 
 
 const Body=()=>{
@@ -94,7 +95,7 @@ const RestarauntWithDel=withDeliveryLogo(RestarauntCard);
 //conditional rendering
  if(restaurantList.length===0){
 return(
-    <Shimmer/>
+    <HomeShimmer/>
 )
  }
 return(
